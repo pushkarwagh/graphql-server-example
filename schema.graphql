@@ -1,7 +1,6 @@
 type Query  {
    test: String,
-   students: [Students],   
-   college: [College]
+   students: [Students]      
 }
 
 type College {
