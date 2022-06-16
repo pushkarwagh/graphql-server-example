@@ -1,3 +1,20 @@
 type Query  {
-   test: String
+   test: String,
+   students: [Students],   
+   college: [College]
+}
+
+type College {
+    id: ID!
+    name: String
+    location: String
+    rating:Float
+}
+
+type Students {
+   id: ID!
+   firstName:String
+   lastName:String
+   email: String
+   college: College
 }
